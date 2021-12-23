@@ -1,0 +1,22 @@
+.listtrajets{
+    margin: 7% 0%;
+    width: 100%;
+}
+
+.loading{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading img{
+width: 60px;
+
+}
+
+.nu{
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+}

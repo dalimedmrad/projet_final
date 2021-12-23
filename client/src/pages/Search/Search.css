@@ -1,0 +1,16 @@
+.search2{
+    width: 80%;
+    height: 105px;
+    margin: 3% auto;
+    display:flex; 
+    
+}
+.search2 input{
+    margin: 0% 0%;
+    height: 50px;
+    width: 35%;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
