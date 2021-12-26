@@ -24,17 +24,6 @@ const UsersList = () => {
             <tbody>
               {usersRedux?.filter(el=>el._id != userRedux?._id).map((el)=>(<User user={el}/>))}
             </tbody>
-            <tfoot>
-              <tr>
-                <th>Photo</th>
-                <th>Non</th>
-                <th>Prénom </th>
-                <th>Date de naissance</th>
-                <th>Addresse email</th>
-                <th>Numero de télephone</th>
-                <th>Actions</th>
-              </tr>
-            </tfoot>
           </table>
       </div>
     );

@@ -14,3 +14,82 @@
     font-size: 20px;
     text-align: center;
 }
+
+.jLmFAm {
+    width: 50%;
+    margin: 1% auto;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    min-height: 54px;
+    padding: 0px 16px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 16px;
+    color: rgb(5, 71, 82);
+    font-size: 16px;
+    line-height: 54px;
+    height: 70px;
+    text-decoration: none;
+}
+
+.eTCYdg .kirk-uneditableTextField .kirk-icon {
+    flex-shrink: 0;
+}
+
+.jLmFAm .kirk-uneditableTextField-label:not(:first-child) {
+    margin-left: 16px;
+}
+
+.eTCYdg .kirk-uneditableTextField-label {
+    width: calc(100% - 48px);
+    display: flex;
+    flex-direction: column;
+}
+
+.jLmFAm .kirk-uneditableTextField-label--ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.grUvZq.kirk-text-body, .grUvZq.kirk-text-bodyStrong {
+    color: rgb(112, 140, 145);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@media (min-width: 800px){
+    .eTCYdg.eTCYdg .kirk-requestRecap-location, .eTCYdg.eTCYdg .kirk-requestRecap-info {
+        font-size: 16px;
+    }
+}
+
+.grUvZq.kirk-text-body, .grUvZq.kirk-text-bodyStrong {
+    color: rgb(112, 140, 145);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.gQuTBd {
+    display: inline-block;
+    padding: 0.1em 0px 0px;
+    margin: 0px 8px;
+    height: 0.9em;
+    width: 0.9em;
+    flex-shrink: 0;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+}
+
+.grUvZq {
+    margin: 0px;
+    font-weight: 400;
+}
+
+.result{
+    margin: 4% 0;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+
+}

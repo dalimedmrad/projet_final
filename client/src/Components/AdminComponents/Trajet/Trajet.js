@@ -52,7 +52,6 @@ const Trajet = ({trajet}) => {
               <div className="trajet-row"><i class="fas fa-chair"></i><span> description :</span>  {trajet.description.slice(0,20)}...</div>
           </div>  
           <div className="trajet-action">
-              <button>Details</button>
               <button onClick={handleDelete}>Supprimer</button>
           </div>   
       </div>

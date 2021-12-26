@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
-import { getOneById } from '../../JS/userslice/userSlice';
+import { getOneById, log } from '../../JS/userslice/userSlice';
 import {Modal,Button} from 'react-bootstrap';
 import './UserDetail.css';
 
@@ -30,7 +30,7 @@ const UserDetail = ({trajet}) => {
           
           </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" onClick={()=>{handleClose();dispatch(log())}}>
             Fermer
           </Button>
         </Modal.Footer>

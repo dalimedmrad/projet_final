@@ -100,15 +100,14 @@ const dispatch = useDispatch()
 const handleadd =(e)=>{
   e.preventDefault()
   dispatch(ajouterTrajet(Data));
-  // window.location.reload();
+  window.location.reload();
 }
-const check = ()=>{
-  if(Data.depart === '' ||Data.arrive === '' || Data.date_dep === '' || Data.nombredepassage === ''
-      || Data.prix === '' || Data.modelvoiture ==='' || Data.couleurvoiture === ''
-  ){
-      alert('vérifiez à nouveau s\'\il vous plaît !!');
-  }else{handleadd();}
-}
+// const check = ()=>{
+//   if(Data.depart === '' ||Data.arrive === '' || Data.date_dep === '' || Data.nombredepassage === ''
+//       || Data.prix === '' || Data.modelvoiture ==='' || Data.couleurvoiture === ''){
+//       alert('vérifiez à nouveau s\'\il vous plaît !!');
+//   }else{handleadd();}
+// }
   return(
     <div className="bddd">
       <div className="container col-md-12">
@@ -182,7 +181,7 @@ const check = ()=>{
                 </div>
                 <div className="field btns">
                   <button className="prev-3 prev">Précédent</button>
-                  <button  onClick={check}>Enregistrer</button>
+                  <button  onClick={handleadd}>Enregistrer</button>
                 </div>
               </div>
             </form>

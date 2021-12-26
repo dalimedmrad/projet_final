@@ -7,7 +7,7 @@ const Home = () => {
     const [arrive, setarrive] = useState("")
     const [date_dep, setdate_dep] = useState("");
     useEffect(() => {
-        document.getElementById('e').value = new Date().toISOString().substring(0, 10);
+        setdate_dep(document.getElementById('e').value = new Date().toISOString().substring(0, 10));
     }, [])
     return (
         <div>
@@ -19,8 +19,8 @@ const Home = () => {
                 <div className="search">
                     <input type="text" placeholder="Départ" onChange={(e)=>setdep(e.target.value)}/>
                     <input type="text" placeholder="Destination" onChange={(e)=>setarrive(e.target.value)}/>
-                    <input type="date" id="e" onChange={(e)=>setdate_dep(e.target.value)}/>
-                    <Link to={(dep && arrive && date_dep)?`/search/${dep}/${arrive}/${date_dep}`:""}><button disabled={(dep && arrive && date_dep)?false:true} className="btn btn-primary button"> <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="kirk-icon sc-3dofso-0 gVVdlM mr-1" width="25" height="25"  aria-hidden="true"><g fill="none" stroke="#ffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><line x1="22" y1="22" x2="16.4" y2="16.4"></line><circle cx="10" cy="10" r="9"></circle></g></svg>Rechercher</button></Link>
+                    <input type="date" id="e" value={date_dep} onChange={(e)=>setdate_dep(e.target.value)}/>
+                    <Link to={(dep && arrive && date_dep)?`/search/${dep}/${arrive}/${date_dep}`:""}><button disabled={(dep && arrive)?false:true} className="btn btn-primary button"> <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="kirk-icon sc-3dofso-0 gVVdlM mr-1" width="25" height="25"  aria-hidden="true"><g fill="none" stroke="#ffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><line x1="22" y1="22" x2="16.4" y2="16.4"></line><circle cx="10" cy="10" r="9"></circle></g></svg>Rechercher</button></Link>
                 </div>
             </div>
             <div className="section3">

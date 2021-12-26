@@ -22,7 +22,7 @@
     font-size: 70px;
 }
 .search{
-    left: 4%;
+    left: 5.4%;
     top: 60%;
     width: 100%;
     position: absolute;
@@ -40,7 +40,7 @@
 }
 .search input{
     height: 50px;
-    width: 22%;
+    width: 20%;
     border: 1px solid lightgrey;
     border-radius: 5px;
     padding-left: 15px;

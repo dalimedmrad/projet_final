@@ -91,6 +91,9 @@ export const userSlice = createSlice({
       localStorage.removeItem("token");
       localStorage.removeItem("isAuth");
       state.user = null;
+    },
+    log:(state)=>{
+      state.userDetail = null;
     }
   },
   extraReducers: {
@@ -174,6 +177,6 @@ export const userSlice = createSlice({
   },
 });
 
-export const {logout} = userSlice.actions;
+export const {logout,log} = userSlice.actions;
 
 export default userSlice.reducer;
